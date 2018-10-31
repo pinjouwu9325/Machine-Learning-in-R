@@ -1,2 +1,2 @@
-# Machine-Learning-in-R
+# Machine Learning in R
 Machine learning code in R language
