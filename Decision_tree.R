@@ -13,7 +13,7 @@ str(titanic.raw)
 install.packages("arules")
 library(arules)
 
-#Here, we sugest: under A circumstance, if the passenger survive
+#Here, we suggest: under A circumstance, if the passenger survive
 #apriori rules with right hand side(rhs) containing "Survived" only
 rule <- apriori(titanic.raw,
                 #min support and confidence, 最小規則長度(lhs+rhs)
