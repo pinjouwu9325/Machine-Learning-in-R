@@ -1,5 +1,4 @@
 #Backpropagation Neural Network
-setwd("D:/Chen Lab/Programme file/R")
 
 #Packages
 install.packages("neuralnet")
@@ -54,7 +53,7 @@ test <- data[-train_data, ]
 model <- train(form=formula.bpn,
                data=train,
                method="neuralnet",
-               #!! Æ[¹î¤£¦P±Æ¦C²Õ¦X(²Ä¤@¼h1-4­Ónodes; ²Ä¤G¼h0-4­Ónodes)
+               #!! è§€å¯Ÿä¸åŒæŽ’åˆ—çµ„åˆ(ç¬¬ä¸€å±¤1-4å€‹nodes; ç¬¬äºŒå±¤0-4å€‹nodes)
                #to see which combination represent the minimun RMSE
                tuneGrid = expand.grid(.layer1=c(1:4), .layer2=c(0:4), .layer3=c(0)),
                learningrate = 0.01,
